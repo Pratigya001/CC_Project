@@ -29,7 +29,49 @@
         <option value="Traditional">Traditional</option>
       </select>
     </div>
-    <div id="product-list" class="grid"></div>
+
+    <!-- Mithai Display Grid -->
+    <div id="product-list" class="grid">
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Rasgulla_%28Homemade%29.jpg" alt="Rasgulla">
+        <h3>Rasgulla</h3>
+        <p>Category: Bengali</p>
+        <p>₹250/kg</p>
+        <button onclick="addToCart('Rasgulla', 250)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Gulab_Jamun_%28homemade%29.jpg" alt="Gulab Jamun">
+        <h3>Gulab Jamun</h3>
+        <p>Category: Traditional</p>
+        <p>₹220/kg</p>
+        <button onclick="addToCart('Gulab Jamun', 220)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Kaju_katli_%28cashew_sweet%29.jpg" alt="Kaju Katli">
+        <h3>Kaju Katli</h3>
+        <p>Category: Dry Fruit</p>
+        <p>₹600/kg</p>
+        <button onclick="addToCart('Kaju Katli', 600)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Ladoo.jpg" alt="Motichoor Ladoo">
+        <h3>Motichoor Ladoo</h3>
+        <p>Category: Festival</p>
+        <p>₹300/kg</p>
+        <button onclick="addToCart('Motichoor Ladoo', 300)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Jalebi.jpg" alt="Jalebi">
+        <h3>Jalebi</h3>
+        <p>Category: Traditional</p>
+        <p>₹180/kg</p>
+        <button onclick="addToCart('Jalebi', 180)">Add to Cart</button>
+      </div>
+    </div>
   </section>
 
   <!-- Add Mithai -->
@@ -40,7 +82,7 @@
       <input type="number" id="mprice" placeholder="Price (₹)" required>
       <input type="text" id="mcategory" placeholder="Category (e.g., Bengali)" required>
       <input type="text" id="mimg" placeholder="Image URL (optional)">
-      <button type="submit">Add </button>
+      <button type="submit">Add</button>
     </form>
   </section>
 
