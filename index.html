@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mithai Mahal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍡 Mithai Mahal - Traditional Sweets Shop</h1>
+    <nav>
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('add')">Add Sweets</button>
+      <button onclick="showPage('cart')">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+  <section id="home" class="active">
+    <h2>Available Mithai</h2>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search mithai by name..." onkeyup="searchMithai()">
+      <select id="filter" onchange="filterMithai()">
+        <option value="all">All Categories</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Dry Fruit">Dry Fruit</option>
+        <option value="Festival">Festival</option>
+        <option value="Traditional">Traditional</option>
+      </select>
+    </div>
+    <div id="product-list" class="grid"></div>
+  </section>
+
+  <!-- Add Mithai -->
+  <section id="add">
+    <h2>Add New Mithai</h2>
+    <form id="add-form">
+      <input type="text" id="mname" placeholder="Mithai Name" required>
+      <input type="number" id="mprice" placeholder="Price (₹)" required>
+      <input type="text" id="mcategory" placeholder="Category (e.g., Bengali)" required>
+      <input type="text" id="mimg" placeholder="Image URL (optional)">
+      <button type="submit">Add </button>
+    </form>
+  </section>
+
+  <!-- Cart -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3 id="total">Total: ₹0</h3>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Mithai Mahal | Made with ❤️ in Ludhiana</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

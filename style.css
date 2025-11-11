@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #81c7e4;
+  color: #333;
+}
+
+header {
+  background: #f50915;
+  color: yellow;
+  text-align: center;
+  padding: 20px;
+}
+
+nav button {
+  margin: 6px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #f03232;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav button:hover {
+  background: #ffe5b4;
+}
+
+section {
+  display: none;
+  padding: 20px;
+}
+section.active {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #d62828;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.controls input, .controls select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.card:hover { transform: scale(1.03); }
+
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card h3 { margin-top: 10px; color: #d62828; }
+.card p { color: #666; margin: 5px 0; }
+
+.card button {
+  background: #d62828;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.card button:hover { background: #b91d1d; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form input, form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #d62828;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  background: #fcbf49;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+.delete-btn {
+  background: #f77f00;
+  margin-top: 5px;
+}
+.delete-btn:hover {
+  background: #e85d04;
+}
